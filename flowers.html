@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRESH FLOWERS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="custom.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.site-nav {
+    font-size: .94118em;
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor: default;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.site-nav {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 30px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+.site-nav__link {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #767676;
+    background-color: #fff;
+    font-weight: 600;
+    padding: 7px 20px 7px 15px;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avtar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+    label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .formLabels {
+      color: #56cc54
+    }
+    .design{
+      background: url("pooja.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .display-4{
+      font-family: cursive;
+    }
+    
+  </style>
+</head>
+
+<body class="design">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  
+  <div class="container-fluid">
+    <div class="jumbotron" style="background-color:transparent !important;">
+      <h1 class="display-4 ">FRESH FLOWERS <span class="badge badge-success">GIFT NOW</span></h1>
+      <p class="lead font-weight-bold" style="
+        color: darkcyan;
+    ">Make Your Special Day Special..whatever the occasion,our flowers will make it special..where flowers are our inspiration to create lasting memories. </p>
+      
+      <p>Online Flower Delivery</p>
+
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="collapse"
+          data-target="#collapsibleArea">Learn more</a>
+      </p>
+      <div id="collapsibleArea" class="collapse">
+        
+       
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-4">
+      <div class="list-group" id="list-tab" role="tablist">
+        
+        <a class="list-group-item list-group-item-action" id="list-Category-list" data-toggle="list" href="#list-Category" role="tab" aria-controls="Category">Category</a>
+        <a class="list-group-item list-group-item-action" id="list-Colour-list" data-toggle="list" href="#list-Colour" role="tab" aria-controls="Colour">Colour</a>
+        <a class="list-group-item list-group-item-action" id="list-Occasion-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="Occasion">Occasion</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="tab-content" id="nav-tabContent">
+        
+        <div class="tab-pane fade" id="list-Category" role="tabpanel" aria-labelledby="list-Category-list">...</div>
+        <div class="tab-pane fade" id="list-Colour" role="tabpanel" aria-labelledby="list-Colour-list">...</div>
+        <div class="tab-pane fade" id="list-Occasion" role="tabpanel" aria-labelledby="list-Occasion-list">...</div>
+      </div>
+    </div>
+  </div>
+  <input class="btn btn-primary" type="submit" value="Submit">
+  <input class="btn btn-primary" type="reset" value="Reset">
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avtar.png" alt="Avtar" class="avtar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+   
+
+
+
+
+
+
+ 
+
+          
+
+</body>
+<script>
+  function submitFormInternally() {
+    console.log('I am here');
+    $('.alert').show();
+   
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+  }
+  
+
+  const searchFocus = document.getElementById('search-focus');
+  const keys = [
+    { keyCode: 'AltLeft', isTriggered: false },
+    { keyCode: 'ControlLeft', isTriggered: false },
+  ];
+  
+  window.addEventListener('keydown', (e) => {
+    keys.forEach((obj) => {
+      if (obj.keyCode === e.code) {
+        obj.isTriggered = true;
+      }
+    });
+  
+    const shortcutTriggered = keys.filter((obj) => obj.isTriggered).length === keys.length;
+  
+    if (shortcutTriggered) {
+      searchFocus.focus();
+    }
+  });
+  
+  window.addEventListener('keyup', (e) => {
+    keys.forEach((obj) => {
+      if (obj.keyCode === e.code) {
+        obj.isTriggered = false;
+      }
+    });
+  });
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</html>
+<i class="bi bi-facebook"></i>
+<i class="bi bi-whatsapp"></i>
+<i class="bi bi-twitter"></i>
